@@ -46,8 +46,8 @@ Our proprietary, fine-tuned `Llama-3.1-8B` model. Quantized to 4-bit GGUF (4.6GB
 
 This repository archives the foundational research, technical validation reports, and architecture blueprints for the M.A.C. Framework. 
 
-*   [**Positioning & Synthesis Paper (PDF)**](papers/MAC_Positioning_Synthesis.pdf) - Architectural framing, comparison against flat-context/RAG systems, and the epistemic discipline behind the M.A.C. design.
-*   [**Technical Evaluation Report (PDF)**](papers/MAC_Technical_Evaluation.pdf) - Proof-of-concept validation of the JARVIS cognitive loop, RCON polling stability, and end-to-end WebSocket integration.
+*   [**Positioning & Synthesis Paper (PDF)**](https://github.com/IHat0/M.A.C/blob/main/MAC_Research_Paper.pdf) - Architectural framing, comparison against flat-context/RAG systems, and the epistemic discipline behind the M.A.C. design.
+*   [**Technical Evaluation Report (PDF)**](https://github.com/IHat0/M.A.C/blob/main/MAC_Technical_Report.pdf) - Proof-of-concept validation of the JARVIS cognitive loop, RCON polling stability, and end-to-end WebSocket integration.
 
 ---
 
