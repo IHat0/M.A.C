@@ -28,7 +28,7 @@ The M.A.C. framework is highly modular. The core engine is divided into three sp
 *The Translator & Reflex Engine.*
 Replaces verbose natural language with a strict, token-efficient Domain-Specific Language (DSL). Features an asynchronous "Spinal Cord" interrupt loop that intercepts environmental threats and executes deterministic survival reflexes in `~0.01ms`—bypassing the LLM entirely for safety-critical actions.
 
-### [Pillar 2: Spatial GraphRAG & "Déjà Vu" Seed System](https://github.com/IHat0/spatial-graphrag)
+### [Pillar 2: Spatial GraphRAG & "Déjà Vu" Seed System](https://github.com/IHat0/spacial-graghrag)
 *The Topological Navigation Engine.*
 Bypasses heavy computer vision models by translating 3D worlds into lightweight hierarchical graph databases. Allows agents to query massive maps in `<1.2ms`, mutate broken paths in `11µs`, and inject navigation context into the LLM payload using fewer than 20 tokens.
 
@@ -91,11 +91,11 @@ flowchart TD
     end
 
     %% Real-Time Loop Flow
-    Bot ==>|Raw Stream (50ms)| State
-    State ==> SpinalCord
+    Bot -->|Raw Stream 50ms| State
+    State --> SpinalCord
     
     %% The Reflex Path
-    SpinalCord ==>"🚨 L0 THREAT! (<10ms)"==> Interpreter
+    SpinalCord -->|🚨 L0 THREAT! <10ms| Interpreter
     
     %% The Cognitive Path
     SpinalCord -->|Safe Context| P3_E
@@ -103,8 +103,8 @@ flowchart TD
     P3_S -.->|Semantic Payload| LLM
     P3_E -.->|Episodic Payload| LLM
     
-    LLM ==>|Outputs MAC-L Codec| Interpreter
-    Interpreter ==>|Physical Action| Bot
+    LLM -->|Outputs MAC-L Codec| Interpreter
+    Interpreter -->|Physical Action| Bot
 
     %% Nightly Sleep Loop Flow
     Sleep -.->|Reads & Purges| P3_E
